@@ -16,7 +16,7 @@ void setup()
 
   WiFi.softAPConfig(local_IP, gateway, subnet); //设置AP地址
   while(!WiFi.softAP(ssid, password)){}; //启动AP
-  Serial.println("AP启动成功");
+  Serial.println("AP startup success");
 
   Serial.print("IP address: ");
   Serial.println(WiFi.softAPIP()); // 打印IP地址
